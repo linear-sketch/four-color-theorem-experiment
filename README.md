@@ -15,11 +15,7 @@ Kita definisikan fungsi muatan awal untuk setiap simpul $v$ sebagai $M_0 (v) = 6
 Untuk meengeliminasi hambatan struktural simetris (kondisi dimana simpul berderajat sama saling bertetangga langsung) sekaligus mengunci sifat asimetri tangga, diterapkan aturan transfer muatan berikut:
 1. Kondisi Kluster Simetris ($r \sim r$)
    Jika terdapat dua simpul bertetangga $v_i \sim v_j$ yang memiliki derajat simpul yang sama $d(v_i) = d(v_j) = r$ dimana $r \in \{3, 4, 5\}$, maka pasangan simpul ini didefinisikan satu kesatuan kluster **Muatan gabungan** sebagai berikut:
-   $$
-   M_{shared} = +2 M_0(r)
-   $$
+   $$M_{shared} = +2 M_0(r)$$
 2. Fungsi Alter-Lintasan Tangga
    Untuk setiap sub-graf yang membentuk lintasan rantai anak tangga $T = \{v_1, v_2, \dots, v_m\}$ perpindahan muatan antar-simpul berderajat $r \in \{3, 4, 5\}$ di sepanjang lintasan tersebut diatur secara otomatis oleh Fungsi Lintasan berdasarkan posisi langkah anak tangga ($n$):
-   $$
-   M_{transfer} (n) = 2 (-1)^{n+1} M_0 (r)
-   $$ 
+   $$M_{transfer} (n) = 2 (-1)^{n+1} M_0 (r)$$
